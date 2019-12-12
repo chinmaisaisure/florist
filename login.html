@@ -1,0 +1,66 @@
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>EMart Login and Register page</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="login.js"></script>
+        
+</head>
+<body class="loginbody">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css">
+    <div class="mainmenu-area">
+            <div class="container">
+                <div class="row">
+                        <div class="logo">
+                                
+                            </div>
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div> 
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                             <li><h1><a href="./"><img src="image/logo.png"></a></h1></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="shop.html">Shop page</a></li>
+                            <li><a href="single-product.html">Single product</a></li>
+                            <li ><a href="cart.html">Cart</a></li>
+                            
+                            <li><a href="admin.html">ADMIN</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li class="active"><a href="login.html"><i class="fa fa-user"></i> Login</a></li>
+                        </ul>
+                    </div>  
+                </div>
+            </div>
+        </div> <!-- End mainmenu area -->
+    <div id="loginstyle"class="loginform">
+        
+            <div class="title">BLOOMS Signin</div>
+        <div class="form">
+            <form name="login" class="login"  action="loginval.php" method="POST">
+
+                <label for="uname"><b>E-Mail*</b></label>
+                <input name="username" id="uname" type="text" pattern="!#$%&'*+-/=?^_`{|}~"  placeholder="Username" required><br><br>
+
+                <label for="pwsd"><b>Password*</b></label>
+                <input name="password" id = "pwsd" type="password" placeholder="Password" class="psclass" value="" required/><br><br>
+               <input type="checkbox" onclick= myFunction()>Show Password <br>
+                
+                <button id="signinbutton" onclick= validateForm() class="signin-btn">Sign in<a href="./index.html" ></a></button><br><br>
+                <p style="text-align:center;"><span class="psw"> <a href="./forget-password.html">Forgot password?</a></span></p>
+               
+                <p > New user? <button id="newuser" class="register-btn"> <a href="signup.html" id="newuser" style="color:white">Register</a> </button><br>  
+            </p></form>
+        </div>
+    </div>
+</body>
+</html>
